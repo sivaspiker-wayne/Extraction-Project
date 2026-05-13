@@ -1,0 +1,134 @@
+LOAN APPLICATION DUMP - LEGACY SYSTEM EXPORT (NBFC PORTAL v2.1)
+EXPORT TIMESTAMP: 2024-03-20 02:30:00
+DELIMITER: PIPE (|) | ENCODING: UTF-8 | BRANCH: ALL
+FIELDS: APP_ID|NAME|DOB|PAN|AADHAAR|MOBILE|EMAIL|CARD|LOAN_DATE|STATUS
+========================================================================
+
+NOTE: Records below are raw. Some fields may be missing, duplicated or
+formatted differently due to migration from old COBOL-based mainframe.
+DO NOT PROCESS WITHOUT CLEANING.
+
+------------------------------------------------------------------------
+APP_ID: LN-2024-0081
+Name   : Karthik Arjun
+DOB    : 15-JAN-1986
+PAN No.: krtss1234a        <- lowercase, needs normalisation
+Aadhaar: 1234-5678-9012
+Mobile : 9845001234
+Email  : karthik.arjun@gmail.com
+Card   : 4111111111111111 (used for EMI repayment)
+Applied: 01/03/2024
+Status : Approved
+
+------------------------------------------------------------------------
+APP_ID: LN-2024-0082
+Name   :  Fatima Raza
+DOB    :  1990/07/22
+PAN No.: FMTSK5678B
+AADHAAR: 2345678901 23           <- extra space in middle, invalid spacing
+Mobile :  0091 9012345678
+Email  :  fatima.raza@yahoo.in
+card no: 5105-1051-0510-5100
+Loan dt: 2024-03-02
+STATUS : Under Review
+
+------------------------------------------------------------------------
+APP_ID : LN-2024-0083
+Name    : Suresh Babu R
+dob     : 3rd March 1978
+pan     : SRBBN2345C
+aadhaar : 345678901234
+mob     : 8765432109
+email   : sureshbabu.r@outlook.com
+cc used : 4012 8888 8888 1881
+date    : March 3 2024
+status  : Rejected - CIBIL
+
+------------------------------------------------------------------------
+APP_ID=LN-2024-0084
+Name=Ananya Sen
+DOB=28-Feb-1995
+PAN=ANAGH3456D
+Aadhaar=456789012345
+Mobile=+91-9876001234
+Email=ananya.sen@rediffmail.com
+CardNum=5500000000000004
+LoanDate=04-03-2024
+Status=Approved
+
+------------------------------------------------------------------------
+[RECORD CORRUPTED - PARTIAL]
+APP_ID: LN-2024-0085
+Name: Rajendra Kumar
+DOB : 1969/11/09
+PAN : RJPRD4567E
+Aadhaar: 5678 9012 3456
+Mobile: 9234567890
+Email : rajendra.kumar@gmail.com
+Card  : 3714-4963-5398-431   <- Amex, 15 digit, check formatting
+date  :
+Status: ??? (not updated)
+
+------------------------------------------------------------------------
+APP_ID: LN-2024-0086
+FULL NAME  : Nandita Das
+DATE BIRTH : 12 Aug 1988
+PAN NUMBER : NNDTR5678F
+AADHAAR NO : 6789 0123 4567
+MOB NUMBER : +919988123456
+EMAIL ADDR : nandita.das@icloud.com
+REPAY CARD : 6011000990139424
+LOAN DATE  : 05-MAR-2024
+STATUS     : Disbursed
+
+------------------------------------------------------------------------
+APP_ID: LN-2024-0087
+Name: Harpreet Kaur
+DOB: 01-01-1983
+PAN: HRPRS6789G
+Aadhaar: 7890123456 78     <- spacing issue
+Contact: 9871234560
+e-mail: harpreet.kaur83@gmail.com
+Card Number: 4916338506082832
+Application Date: 6 March, 2024
+Loan Status: Approved
+
+------------------------------------------------------------------------
+APP_ID: LN-2024-0088
+applicant : Rekha Lata
+born on   : September 14 1975
+pan card  : rkhMN7890h       <- mixed case
+aadhar    : 8901234567890    <- 13 digits, possible OCR error
+phone     : 044-98001234     <- landline prefix mixed with mobile?
+email     : rekha.lata75@hotmail.com
+cc number : 4532015112830366
+date applied : 7-3-2024
+current status : Pending Documentation
+
+------------------------------------------------------------------------
+APP_ID: LN-2024-0089
+Name: Joseph Kurian
+DOB: 23/04/1992
+PAN: JSPMT8901I
+Aadhaar: 9012345678901       <- 13 digits, check
+Mobile: +91 9745123456
+Email: joseph.kurian@gmail.com
+Repayment Card: 5425233430109903
+Date: 08-03-2024
+Status: Approved
+
+------------------------------------------------------------------------
+APP_ID: LN-2024-0090
+name      | Lalitha Devi K
+dob       | 30-JUN-1980
+pan       | LLTHD9012J
+aadhaar   | 0123 4567 8901
+mobile    | 9600112233
+email     | lalitha.devi@yahoo.co.in
+card      | 4716-5049-9065-1049
+applied   | 09/03/2024
+status    | Disbursed
+
+========================================================================
+END OF FILE | Records Exported: 10 | System: LoanOS 2.1 COBOL Bridge
+WARNING: This file contains sensitive PII. Handle as per IT Policy 4.2

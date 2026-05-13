@@ -1,0 +1,142 @@
+========================================================
+E-COMMERCE ORDER DUMP - RAW WEBHOOK LOG
+Platform   : ShopEasy India (Internal)
+Pulled by  : Data Ops Team
+Period     : 01-Mar-2024 to 10-Mar-2024
+Format     : Semi-structured text (migrated from JSON webhooks)
+NOTE       : Legacy orders pre-2023 may have raw card fields exposed.
+             Newer orders use tokenized values but format differs.
+========================================================
+
+
+--- ORDER RECORD ---
+order_id       : ORD-20240301-9001
+order_date     : 2024-03-01T08:22:11Z
+customer_name  : Arvind Verma
+customer_email : arvind.verma@gmail.com
+phone          : 9811223344
+item           : Wireless Headphones x1 | Rs.2999
+payment_method : Credit Card
+card_number    : 4111111111111111
+card_type      : Visa
+billing_address: 14, MG Road, Bengaluru - 560001
+status         : Delivered
+delivery_date  : 05-03-2024
+
+--- ORDER RECORD ---
+order_id       : ORD-20240301-9002
+order_date     : 1 March 2024, 10:05 AM
+customer_name  : Sneha Jadhav
+customer_email : snehajadhav_22@yahoo.co.in
+phone          : +91 9922334455
+item           : Silk Saree x2 | Rs.5498
+payment method : Credit Card
+card           : 5500 0000 0000 0004
+card type      : Mastercard
+billing        : Flat 3B, Shivaji Nagar, Pune 411005
+Order Status   : Delivered
+
+--- ORDER RECORD ---
+order_id     : ORD-20240302-9003
+Date         : 02/03/2024
+Cust. Name   : Mohammed Rizwan
+Email        : mrizwan@hotmail.com
+Ph.          : 09876543210
+Product      : Running Shoes | Rs. 3499
+Payment      : Debit Card | 4012888888881881
+Billing Addr : 7, Anna Salai, Chennai - 600002
+Status       : Shipped
+est. delivery: 07 March 2024
+
+--- ORDER RECORD ---
+[RECORD FLAG: raw_payment_field exposed - pre-tokenisation order]
+OrderID     = ORD-20240302-9004
+order_ts    = 2024-03-02 14:33:09
+name        = Kavitha Arvind
+email       = kavitha.arvind@icloud.com
+mobile      = 7788990011
+item        = Mixer Grinder | Rs. 4299
+pymt_raw    = 4916338506082832   <- raw card, pre-token era
+card_brand  = Visa
+address     = No.9 Kamaraj Ave, Madurai 625001
+Aadhaar     = 2233 4455 6677     <- captured for EMI KYC
+status      = Delivered
+
+--- ORDER RECORD ---
+order_id    : ORD-20240303-9005
+timestamp   : March 3, 2024 9:10 AM
+Name        : Pooja Lekha
+email id    : pooja.lekha@gmail.com
+contact     : +91-8899001122
+product     : Yoga Mat + Resistance Bands | Rs.1799
+payment     : Credit Card
+cc num      : 3714496353984310   <- Amex 15 digit
+billing     : 22, Juhu Scheme, Mumbai - 400049
+order_status: Processing
+
+--- ORDER RECORD ---
+ORDER ID   : ORD-20240304-9006
+Date       : 04-Mar-2024
+Customer   : Ganesh Lal
+Mail       : ganesh.lal@rediffmail.com
+Mobile     : 9500112233
+Ordered    : Smart Watch | Rs.8999
+Card Used  : 6011 1111 1111 1117 (Discover/Diners)
+Address    : 45 T Nagar, Chennai 600017
+Aadhaar ref: 3344 5566 7788  (EMI verification)
+Status     : Out for Delivery
+
+--- ORDER RECORD ---
+ORD-20240305-9007 | 05/03/2024 | Ritu Chandra
+Email: ritu.chandra2000@gmail.com | Phone: 9650001234
+Item: Laptop Bag Rs.1299
+Card: 5425-2334-3010-9903 | MasterCard
+Ship to: B-204 Vasant Kunj New Delhi 110070
+Aadhaar: 4455 6677 8899 (EMI)
+Status: Delivered | 07-03-2024
+
+--- ORDER RECORD ---
+[DUPLICATE SUSPECTED - same card, 4 min apart]
+order_id      : ORD-20240306-9008
+order_id_dup  : ORD-20240306-9008B
+Date          : 6 March 2024 11:21 AM
+customer      : Bhavna Joshi
+contact email : bhavna.joshi@outlook.com
+phone number  : 8877665544
+product       : Air Purifier | Rs.6499
+cc_number     : 4532015112830366
+cc_type       : Visa
+delivery addr : 301 Satellite Road Ahmedabad 380015
+status        : Payment Review Hold
+
+--- ORDER RECORD ---
+{incomplete record}
+order_id   : ORD-20240307-9009
+date       : 2024-03-07
+cust_name  : Sanjay Tiwari
+email      : sanjaytiwari@gmail.com
+mobile     : 9823001234
+item       : Pressure Cooker Rs.2199
+card       : 4716504990651049
+address    : [NULL - not captured]
+aadhaar    : 5566 7788 9900
+status     : Failed - Address Missing
+
+--- ORDER RECORD ---
+order_id       : ORD-20240308-9010
+transaction_dt : 08-03-2024 03:45 PM
+customer_name  : Amrita Das
+customer_email : amrita.das@gmail.com
+phone          : +91 9748001234
+product        : Saree + Blouse Combo | Rs.3799
+payment_type   : Net Banking + Card (split)
+card_used      : 5105105105105100
+billing_add    : 12 Lake View Road Kolkata 700029
+aadhaar_kyc    : 6677 8899 0011
+order_status   : Delivered
+delivery_date  : 11/03/2024
+
+========================================================
+END OF DUMP | Orders: 10 | Exported by: DataOps-v3.1
+REMINDER: Mask PII before sharing outside Data team.
+========================================================
